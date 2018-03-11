@@ -17,18 +17,11 @@ echo "This is " . __FILE__;
 @section("title", "Title: $title" )
 
 @section("content")
-<h2>Section stuff</h2>
-<p>Other: {{$other}}</p>
-<p>Var3: {{$var3}}</p>
-<p>More...</p>
-<p>More...</p>
-<p>More...</p>
-<p>More...</p>
+<h1>Simple Sidebar</h1>
+<p>This template has a responsive menu toggling system. The menu will appear collapsed on smaller screens, and will appear non-collapsed on larger screens. When toggled using the button below, the menu will appear/disappear. On small screens, the page content will be pushed off canvas.</p>
+<p>Make sure to keep all page content within the <code>#page-content-wrapper</code>.</p>
 @endsection
 
-@section("sidebar")
-This will override the master sidebar section
-@endsection
 
 @section("extensionbar")
 	@parent
