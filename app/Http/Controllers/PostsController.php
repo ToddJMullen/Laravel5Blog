@@ -17,7 +17,7 @@ class PostsController extends Controller
     {
         $posts = Post::all();
 //		dd($posts);//"dump or die" debug method
-		return view("posts.index", ['posts' => $posts] );
+		return view("posts.index", ['posts' => $posts, "title" => "A Title"] );
     }
 
     /**
