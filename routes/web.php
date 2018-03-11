@@ -17,20 +17,29 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get("posts", function(){
+//using the manual method we can define each CRUD route => method option explicitly
+//Route::get("posts","PostsController@index");//show all
+//Route::get("posts/create","PostsController@create");//add new
+//Route::post("posts/create","PostsController@store");//create new
 
-//	if( view()->exists("posts.index") ){
-//		return "The named view exists";
-//	}
-//	else {
-//		return "The named view does not exist.";
-//	}
+//Or, we use the resource method of Route which declares all 7 CRUD maps to match generated controller methods (expected CRUD interface)
+Route::resource("posts","PostsController");
 
-	$title	= "Another title";
-	$other	= "Bob's Jumps";
-	$var3	= "var3";
-	return view("posts.index", compact("title","other","var3") );
-});
+
+//Route::get("posts", function(){
+//
+////	if( view()->exists("posts.index") ){
+////		return "The named view exists";
+////	}
+////	else {
+////		return "The named view does not exist.";
+////	}
+//
+//	$title	= "Another title";
+//	$other	= "Bob's Jumps";
+//	$var3	= "var3";
+//	return view("posts.index", compact("title","other","var3") );
+//});
 
 //Route::get("testRoute", function(){
 //	return "Test route worked";
