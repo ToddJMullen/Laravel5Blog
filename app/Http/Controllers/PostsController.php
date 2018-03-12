@@ -15,7 +15,8 @@ class PostsController extends Controller
      */
     public function index()
     {
-        $posts = Post::all();
+//        $posts = Post::all();
+        $posts = Post::paginate(10);
 //		dd($posts);//"dump or die" debug method
 		return view("posts.index", ['posts' => $posts, "title" => "A Title"] );
     }
@@ -56,7 +57,7 @@ class PostsController extends Controller
     public function show($id)
     {
         $post = Post::find( $id );
-		return view("posts.show", ["post", $post] );
+		return view("posts.show", ["post" => $post] );
     }
 
     /**
