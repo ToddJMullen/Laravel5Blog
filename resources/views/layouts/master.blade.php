@@ -56,7 +56,7 @@
 						<a href="#">Services</a>
 					</li>
 					<li>
-						<a href="#">Contact</a>
+						<a href="{{ action("PostsController@index") }}">All Posts</a>
 					</li>
 					<li>
 						<a class="menu-toggle btn btn-secondary text-left" >Close Menu</a>
