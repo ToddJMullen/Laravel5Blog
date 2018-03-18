@@ -86,7 +86,7 @@ class PostsController extends Controller
 		$post->title	= $request->input("title");
 		$post->body		= $request->input("body");
 		$post->save();
-//		return view("posts.view", ["post", $post] );//he didn't do this, maybe this is terminal endpoint?
+		return redirect("/posts");
     }
 
     /**
