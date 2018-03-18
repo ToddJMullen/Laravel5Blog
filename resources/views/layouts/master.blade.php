@@ -53,7 +53,7 @@
 						<a href="#">About</a>
 					</li>
 					<li>
-						<a href="#">Services</a>
+						<a href="{{ action("PostsController@create") }}">Write Post</a>
 					</li>
 					<li>
 						<a href="{{ action("PostsController@index") }}">All Posts</a>
