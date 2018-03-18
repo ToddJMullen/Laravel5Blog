@@ -41,10 +41,13 @@
 						<a href="#">Dashboard</a>
 					</li>
 					<li>
-						<a href="#">Shortcuts</a>
+						<a href="login">Login</a>
 					</li>
 					<li>
-						<a href="#">Overview</a>
+						<a href="users">Users</a>
+					</li>
+					<li>
+						<a href="inventory">Inventory</a>
 					</li>
 					<li>
 						<a href="#">Events</a>
