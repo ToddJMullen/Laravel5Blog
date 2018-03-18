@@ -15,6 +15,8 @@
 			<input name="_method" value="DELETE" type="hidden">
 			<button class="btn btn-danger pull-right">Delete</button>
 			{{ csrf_field() }}
+			<a href="{{ action('PostsController@edit', $post->id) }}"
+			   class="btn-warning btn pull-right">Edit</a>
 		</form>
 	</article>
 
