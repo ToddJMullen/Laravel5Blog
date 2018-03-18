@@ -34,7 +34,7 @@
 				id="saveBlog" value="saveBlog">Update...</button>
 	</div>
 
-
+	<input name="_method" value="PUT" type="hidden">
 	{{ csrf_field() }}
 </form>
 @endsection
