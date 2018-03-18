@@ -75,17 +75,19 @@
 
 
 
-					<button data-target="#extensionContent" data-toggle="collapse" aria-expanded="false"
-							aria-controls="extensionContent" class="btn btn-sm btn-primary" type="button">
-						Extension Content
-					</button>
-					<div id="extensionContent" class="parent collapse">
+					<div class="col-sm-12 mt-5 mb-5 b-0">
+						<button data-target="#extensionContent" data-toggle="collapse" aria-expanded="false"
+								aria-controls="extensionContent" class="btn btn-sm btn-primary" type="button">
+							Extension Content
+						</button>
+							<div id="extensionContent" class="parent collapse">
 
-						<p>This is the master/parent extension bar content</p>
+							<p>This is the master/parent extension bar content</p>
 
-					@section("extensionbar")
-						@show
-						<p>This is after the injected stuff</p>
+							@section("extensionbar")
+							@show
+							<p>This is after the injected stuff</p>
+						</div>
 					</div>
 				</div>
 			</div>
