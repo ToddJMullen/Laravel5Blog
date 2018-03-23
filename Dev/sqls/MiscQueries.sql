@@ -1,4 +1,4 @@
-use blog_db;
+USE blog_db;
 SHOW tables WHERE 1;
 
 SELECT * FROM migrations WHERE 1;
