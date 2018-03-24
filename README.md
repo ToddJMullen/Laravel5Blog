@@ -5,7 +5,7 @@ Homestead location: `~/Dev/Homestead`
 + `vagrant ssh` to enter the box
 
 Project physical location
-~/Dev/vms/projects/bloggy.loc
+`~/Dev/vms/projects/bloggy.loc`
 
 Project vm/deployed location
-/projects/bloggy.loc
+`/projects/bloggy.loc`
